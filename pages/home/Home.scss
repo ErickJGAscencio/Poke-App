@@ -1,0 +1,34 @@
+ion-header {
+    --ion-safe-area-top: 10px;
+}
+
+ion-toolbar {
+    --background: var(--background-header);
+    --color: var(--ion-color-light);
+    --padding-start: 16px;
+    --padding-end: 16px;
+    ion-buttons{
+        ion-menu-button {
+    display: block !important;
+            --color: var(--ion-color-light);
+        }
+    }
+}
+
+ion-content{
+    
+}
+
+ion-menu {
+    ion-header {
+        ion-toolbar {
+            --background: var(--background-header);
+            --ion-safe-area-top: 10px;
+
+            ion-title {
+                --color: #fff;
+            }
+            
+        }
+    }
+}

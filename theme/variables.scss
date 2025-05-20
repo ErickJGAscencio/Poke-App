@@ -1,0 +1,49 @@
+/* For information on how to create your own theme, please see:
+http://ionicframework.com/docs/theming/ */
+
+:root {
+    --background-color: #FBDB93;
+    --background-header: #641B2E;
+    --background-button: #BE5B50;
+    --color-font-dark: #641B2E;
+    --color-font-light: #FBDB93;
+
+}
+
+ion-content {
+    --background: var(--background-color);
+    height: max(auto, 100dvh);
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+ion-list {
+    --ion-background-color: transparent;
+
+    ion-item {
+        --background: none;
+        --border-color: #641B2E;
+
+        ion-icon {
+            color: #641B2E;
+        }
+    }
+}
+
+ion-button {
+    --background: var(--background-button);
+    --background-hover: #8A2D3B;
+    --background-activated: var(--color-font-dark);
+    width: fit-content;
+}
+
+ion-spinner {
+    --color: var(--color-font-dark);
+}
