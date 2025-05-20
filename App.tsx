@@ -53,7 +53,6 @@ const App: React.FC = () => (
         <Route exact path="/home">
           <Home />
         </Route>
-
         <Route path="/loading" component={Loader} exact />
         <Route path="/home" component={Home} exact />
         <Route path="/segunda" component={Home} exact />
