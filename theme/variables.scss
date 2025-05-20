@@ -10,11 +10,6 @@ http://ionicframework.com/docs/theming/ */
 
 }
 
-ion-content {
-    --background: var(--background-color);
-    height: max(auto, 100dvh);
-}
-
 .center-container {
     display: flex;
     flex-direction: column;

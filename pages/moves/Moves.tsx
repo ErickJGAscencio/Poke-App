@@ -1,7 +1,7 @@
 import { IonBackButton, IonButtons, IonContent, IonHeader, IonImg, IonInfiniteScroll, IonItem, IonLabel, IonList, IonMenuButton, IonPage, IonTitle, IonToolbar } from "@ionic/react";
 import SearchBar from "../../components/SearchBar";
 import { useState } from "react";
-
+import './Moves.scss'
 
 const Moves: React.FC = () => {
     const [pokemonData, setPokemonData] = useState<PokemonData | null>(null);
@@ -18,7 +18,7 @@ const Moves: React.FC = () => {
                         <IonTitle>Movimientos</IonTitle>
                     </IonToolbar>
                 </IonHeader>
-                <IonContent>
+                <IonContent class="ion-padding">
                     <SearchBar setPokemonData={setPokemonData} setToastMessage={setToastMessage} />
                     <IonList >
                         {pokemonData?.moves.map((item, index) => (

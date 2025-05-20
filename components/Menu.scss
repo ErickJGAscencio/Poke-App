@@ -1,0 +1,22 @@
+ion-menu {
+    ion-header {
+        ion-toolbar {
+            --background: var(--background-header);
+        }
+    }
+}
+
+ion-content#menu-content {
+    --background: var(--background-header);
+
+    ion-list {
+        ion-item {
+            --color: #fff;
+            margin: 0 15px;
+
+            ion-icon{
+                color: #fff;
+            }
+        }
+    }
+}

@@ -35,7 +35,7 @@ import './theme/variables.scss';
 import Moves from './pages/moves/Moves';
 import Menu from './components/Menu';
 import { home } from 'ionicons/icons';
-import Loader from './pages/Loader';
+import Loader from './pages/loader/Loader';
 
 setupIonicReact();
 
