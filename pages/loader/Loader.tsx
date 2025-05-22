@@ -1,6 +1,5 @@
 import { IonContent, IonPage, IonSpinner, useIonRouter } from "@ionic/react"
 import './Loader.scss'
-import { useEffect } from "react";
 
 const Loader: React.FC = () => {
     const router = useIonRouter();
@@ -11,11 +10,13 @@ const Loader: React.FC = () => {
 
     return <>
         <IonPage>
-            <IonContent>
-                <div className="flex-center">
-                    <IonSpinner />
-                </div>
-            </IonContent>
+            <div className="ion-page" id="main-content">
+                <IonContent>
+                    <div className="flex-center">
+                        <IonSpinner />
+                    </div>
+                </IonContent>
+            </div>
         </IonPage>
     </>
 }

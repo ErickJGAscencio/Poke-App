@@ -34,30 +34,48 @@ import '@ionic/react/css/palettes/dark.system.css';
 import './theme/variables.scss';
 import Moves from './pages/moves/Moves';
 import Menu from './components/Menu';
-import { home } from 'ionicons/icons';
 import Loader from './pages/loader/Loader';
+import customPageTransition from './CustomPageTranscition';
+import Api from './pages/api-test/Api';
+import Person from './pages/person/Person';
 
-setupIonicReact();
+setupIonicReact({
+  navAnimation: customPageTransition,
+});
+
 
 const App: React.FC = () => (
   <IonApp>
-    <Menu />
+      <Menu />
     <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/loading">
-          <Home />
-        </Route>
-        <Route exact path="/">
+      <IonRouterOutlet
+        animation={customPageTransition}
+      >
+        {/* <Route exact path="/">
           <Redirect to="/loading" />
+        </Route>        
+        <Route exact path="/loading">
+          <Loader />
         </Route>
         <Route exact path="/home">
           <Home />
         </Route>
+        <Route exact path="/api">
+          <Api/>
+        </Route>
+        <Route exact path="/person">
+          <Person />
+        </Route>
+        <Route exact path="/ataques">
+          <Moves/>
+        </Route> */}
 
+        <Route path="/" render={() => <Redirect to="/loading" />} exact />
         <Route path="/loading" component={Loader} exact />
         <Route path="/home" component={Home} exact />
-        <Route path="/segunda" component={Home} exact />
-        <Route path="/purchases" component={Moves} exact />
+        <Route path="/api" component={Api} exact />
+        <Route path="/ataques" component={Moves} exact />
+        <Route path="/person" component={Person} exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>
