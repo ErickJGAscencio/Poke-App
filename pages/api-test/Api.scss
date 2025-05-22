@@ -18,23 +18,21 @@ ion-card {
     justify-content: center;
     --color: #000 !important;
     margin: 20px 0;
-    ion-input {
-        margin: 10px 0;
-    }
-
-    ion-button {
-        width: 50%;
-    }
-
-    ion-card {
-        --background: #fff;
-        padding: 8px 5px;
-        margin: 10px 0;
-
-        ion-note {
-            --color: var(--color);
-            padding: 0;
-            margin: 0;
+    ion-card-content{
+        // background: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        ion-card {
+            --background: #fff;
+            padding: 8px 5px;
+            margin: 10px 0;
+            
+            ion-note {
+                --color: var(--color);
+                width: 100%;
+            }
         }
     }
 }
