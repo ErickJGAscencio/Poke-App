@@ -16,7 +16,7 @@ const Home: React.FC = () => {
             <IonButtons slot="start">
               <IonMenuButton></IonMenuButton>
             </IonButtons>
-            <IonTitle>Pokemon</IonTitle>
+            <IonTitle>Pokemon Finder</IonTitle>
           </IonToolbar>
         </IonHeader>
         <IonContent class="ion-padding">

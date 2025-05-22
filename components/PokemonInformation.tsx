@@ -1,5 +1,6 @@
-import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonImg, IonItem, IonLabel, IonList } from '@ionic/react';
-import './PokemonInformation.css';
+import { IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonIcon, IonImg, IonItem, IonLabel, IonList } from '@ionic/react';
+import './PokemonInformation.scss';
+import { atCircle, hourglassOutline, star } from 'ionicons/icons';
 
 interface ExploreContainerProps {
   pokemonData: PokemonData | null;
@@ -14,10 +15,26 @@ const PokemonInformation: React.FC<ExploreContainerProps> = ({ pokemonData }) =>
           alt={`Imagen de ${pokemonData?.name}`}
         />
       }
-
       <IonCard>
         <IonCardHeader>
           <IonCardTitle> <b>Types</b> </IonCardTitle>
+        </IonCardHeader>
+        <IonCardContent>
+          <IonList lines='none'>
+            {pokemonData?.types.map((item, index) => (
+              <IonItem key={index}>
+                <IonLabel> 
+                   {item.type.name}
+                  </IonLabel>
+              </IonItem>
+            ))}
+          </IonList>
+        </IonCardContent>
+      </IonCard>
+
+      <IonCard>
+        <IonCardHeader>
+          <IonCardTitle>ESTE ES OTRO TITULO</IonCardTitle>
         </IonCardHeader>
         <IonCardContent>
           <IonList lines='none'>
@@ -37,7 +54,7 @@ const PokemonInformation: React.FC<ExploreContainerProps> = ({ pokemonData }) =>
         <IonCardContent>
           <IonList lines='none'>
             {pokemonData?.evolutions.map((item, index) => (
-              <IonItem key={index}>
+              <IonItem key={index}>sscs
                 <IonLabel>{item.species.name}</IonLabel>
               </IonItem>
             ))}
@@ -47,7 +64,7 @@ const PokemonInformation: React.FC<ExploreContainerProps> = ({ pokemonData }) =>
 
       <IonCard>
         <IonCardHeader>
-          <IonCardTitle> <b>Abilities</b> </IonCardTitle>
+          <IonCardTitle><b>Abilities</b></IonCardTitle>
         </IonCardHeader>
           <IonCardContent>
             <IonList lines='none'>

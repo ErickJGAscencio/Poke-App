@@ -7,16 +7,23 @@ ion-toolbar {
     --color: var(--ion-color-light);
     --padding-start: 16px;
     --padding-end: 16px;
-    ion-buttons{
+
+    ion-buttons {
         ion-menu-button {
-    display: block !important;
+            display: block !important;
             --color: var(--ion-color-light);
         }
     }
 }
 
-ion-content{
-    
+ion-content {
+    --background: var(--background-color);
+    height: max(auto, 100dvh);
+    ion-list{
+        ion-item{
+            --padding-start: 0;
+        }
+    }
 }
 
 ion-menu {
@@ -28,7 +35,7 @@ ion-menu {
             ion-title {
                 --color: #fff;
             }
-            
+
         }
     }
 }

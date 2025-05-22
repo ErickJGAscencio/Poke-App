@@ -2,17 +2,13 @@
 http://ionicframework.com/docs/theming/ */
 
 :root {
-    --background-color: #FBDB93;
-    --background-header: #641B2E;
-    --background-button: #BE5B50;
-    --color-font-dark: #641B2E;
-    --color-font-light: #FBDB93;
+    --background-color: #D2D0A0;
+    --background-header: #537D5D;
+    --background-button: #9EBC8A;
+    
+    --color-font-dark: #73946B;
+    --color-font-light: #D2D0A0;
 
-}
-
-ion-content {
-    --background: var(--background-color);
-    height: max(auto, 100dvh);
 }
 
 .center-container {
