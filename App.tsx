@@ -51,25 +51,6 @@ const App: React.FC = () => (
       <IonRouterOutlet
         animation={customPageTransition}
       >
-        {/* <Route exact path="/">
-          <Redirect to="/loading" />
-        </Route>        
-        <Route exact path="/loading">
-          <Loader />
-        </Route>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/api">
-          <Api/>
-        </Route>
-        <Route exact path="/person">
-          <Person />
-        </Route>
-        <Route exact path="/ataques">
-          <Moves/>
-        </Route> */}
-
         <Route path="/" render={() => <Redirect to="/loading" />} exact />
         <Route path="/loading" component={Loader} exact />
         <Route path="/home" component={Home} exact />
