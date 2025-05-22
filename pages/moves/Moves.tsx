@@ -15,7 +15,7 @@ const Moves: React.FC = () => {
                         <IonButtons slot="start">
                             <IonMenuButton></IonMenuButton>
                         </IonButtons>
-                        <IonTitle>Movimientos</IonTitle>
+                        <IonTitle>API Rest</IonTitle>
                     </IonToolbar>
                 </IonHeader>
                 <IonContent class="ion-padding">

@@ -1,0 +1,40 @@
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.card-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+ion-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    --color: #000 !important;
+    margin: 20px 0;
+    ion-input {
+        margin: 10px 0;
+    }
+
+    ion-button {
+        width: 50%;
+    }
+
+    ion-card {
+        --background: #fff;
+        padding: 8px 5px;
+        margin: 10px 0;
+
+        ion-note {
+            --color: var(--color);
+            padding: 0;
+            margin: 0;
+        }
+    }
+}

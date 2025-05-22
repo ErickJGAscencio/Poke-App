@@ -22,23 +22,26 @@
   text-decoration: none;
 }
 
-ion-card{
+ion-card {
   --background: var(--background-header);
-  padding: 0px;
-  margin: 5px 0;
-  ion-card-header{
-    ion-card-title{
+  align-items: center;
+  padding: 0;
+
+  ion-card-header {
+    ion-card-title {
       --color: #ffF;
     }
   }
-  ion-card-content{
-    ion-list{
-      ion-item{
-        --color:#fff;
+
+  ion-card-content {
+    ion-list {
+      ion-item {
+        --color: #fff;
         margin: 0;
         padding: 0px;
-        ion-icon{
-          --color:#fff;
+
+        ion-icon {
+          --color: #fff;
           --border-color: #fff;
         }
       }

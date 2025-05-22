@@ -34,6 +34,21 @@ const PokemonInformation: React.FC<ExploreContainerProps> = ({ pokemonData }) =>
 
       <IonCard>
         <IonCardHeader>
+          <IonCardTitle>ESTE ES OTRO TITULO</IonCardTitle>
+        </IonCardHeader>
+        <IonCardContent>
+          <IonList lines='none'>
+            {pokemonData?.types.map((item, index) => (
+              <IonItem key={index}>
+                <IonLabel>{item.type.name}</IonLabel>
+              </IonItem>
+            ))}
+          </IonList>
+        </IonCardContent>
+      </IonCard>
+
+      <IonCard>
+        <IonCardHeader>
           <IonCardTitle> <b>Evolution</b> </IonCardTitle>
         </IonCardHeader>
         <IonCardContent>
